@@ -56,7 +56,7 @@ Temperature (C) profile e.g. on the verical grid, e.g. of SURFEX (SURFEX docum.,
 
      Example in the code is given for the Cabauw site observations, very approximately.
 
-5. Run the `Init_Calculator_Year` script. From From `INIT_CALCULATOR_YEAR`:
+5. Run the `Init_Calculator_Year` script. From `INIT_CALCULATOR_YEAR`:
 
    `./Init_Calculator_Year`
 
