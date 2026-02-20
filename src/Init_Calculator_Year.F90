@@ -23,7 +23,7 @@ PROGRAM Init_Calculator_Year
   ! (here. the Cabauw site)
   REAL, PARAMETER :: &
        Z1=0.0, & ! Two levels in the soil with the observations data, m
-       Z2=0.5
+       Z2=0.5    ! (Z2 is deeper than Z1!)
   REAL, PARAMETER :: &
        A1=12., & ! Amplitudes of the annual temperature oscillations in the soil 
        A2=6.5    ! at these two levels, (C)
@@ -105,7 +105,7 @@ PROGRAM Init_Calculator_Year
 
   ! Calculate and print temperatures
   DO il=1,NLEV_H
-     IF(DEPTH_H(il).LT.DepthNoDA) THEN
+     IF(DEPTH_H(il).LT.MAX(DepthNoDA,Z2)) THEN
         WRITE(*,'(I4,F6.2,A4)') il, DEPTH_H(il), ' - '
      ELSE        
         TEMP_H(il)=TMEAN+A0*EXP(-1.*ZWWW_H(il))*COS(ZWWW_H(il)-ZW*ZT+Pi*HEMISPHERE)
