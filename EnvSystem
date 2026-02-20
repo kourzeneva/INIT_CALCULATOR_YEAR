@@ -1,0 +1,11 @@
+#! /bin/bash
+
+echo 'Env_system ...'
+
+DIR=$HOME/INIT_CALCULATOR_YEAR
+wrkDIR=${DIR}/wrk
+srcDIR=${DIR}/src
+
+export DIR
+export wrkDIR
+export srcDIR

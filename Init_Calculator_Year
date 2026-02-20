@@ -1,0 +1,16 @@
+#! /bin/bash
+
+echo 'Start ...'
+
+. EnvSystem
+
+rm -rf $wrkDIR
+mkdir $wrkDIR
+cd $wrkDIR
+
+echo 'Init_Calculator_Year ...'
+
+cp $srcDIR/Init_Calculator_Year.F90 .
+gfortran -c Init_Calculator_Year.F90
+gfortran -o Init_Calculator_Year.out Init_Calculator_Year.o
+./Init_Calculator_Year.out
