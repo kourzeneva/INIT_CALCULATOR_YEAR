@@ -54,7 +54,7 @@ Temperature (C) profile e.g. on the verical grid, e.g. of SURFEX (SURFEX docum.,
      - when estimating annual amplitude from the graphs, remember to "filter out" duirnal cycle. Consider mean day temperatures, not max day temperatures during summer and min night temperatures during winter.
      - amplitude here means ((maximum in summer) - (minimum in winter))/2. Mean yearly temperature can be estimated as ((maximum in summer) + (minimum in winter))/2
 
-     Example in the code is given to the Cabauw site observations, very approximately.
+     Example in the code is given for the Cabauw site observations, very approximately.
 
 5. Run the `Init_Calculator_Year` script. From From `INIT_CALCULATOR_YEAR`:
 
