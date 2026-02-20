@@ -20,7 +20,7 @@ PROGRAM Init_Calculator_Year
   ! PARAMETERS ==================================================================
 
   ! Parameters of the particular site ------------------------------------------
-  ! (here. the Cabauw site)
+  ! (here, the Cabauw site)
   REAL, PARAMETER :: &
        Z1=0.0, & ! Two levels in the soil with the observations data, m
        Z2=0.5    ! (Z2 is deeper than Z1!)
